@@ -124,6 +124,7 @@ Hint: Investigate your data to find "team initials"!
 Hint: use `.reduce` */
 
 function getCountryWins(data, initials) {
+    let winner;
     const wins = data.reduce(function(acc, item) {
         if (item['Home Team Goals'] > item['Away Team Goals']) {
             winner = item['Home Team Initials'];
